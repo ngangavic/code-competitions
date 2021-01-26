@@ -3,7 +3,9 @@ package hackerrank.challenges.birthdaycakecandles;
 //problem link https://www.hackerrank.com/challenges/birthday-cake-candles/problem
 
 import java.io.IOException;
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
 
 public class Solution {
 
@@ -18,26 +20,26 @@ public class Solution {
         // Write your code here
         Collections.sort(candles);
 
-           int highest= candles.get(candles.size()-1);
+        int highest = candles.get(candles.size() - 1);
 
-           int highestCount=0;
+        int highestCount = 0;
 
-           for (int i=0;i<candles.size();i++){
-               if (highest== candles.get(i)){
-                   highestCount++;
-               }
-           }
+        for (int i = 0; i < candles.size(); i++) {
+            if (highest == candles.get(i)) {
+                highestCount++;
+            }
+        }
 
-return highestCount;
+        return highestCount;
     }
 
     public static void main(String[] args) throws IOException {
 
-        List<Integer> candles = new ArrayList<Integer>(){{
-           add(4);
-           add(4);
-           add(4);
-           add(1);
+        List<Integer> candles = new ArrayList<Integer>() {{
+            add(4);
+            add(4);
+            add(4);
+            add(1);
         }};
 
 
